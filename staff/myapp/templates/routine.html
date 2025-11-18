@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Распорядок{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+</head>
+<style>
+    
+  .list {
+    list-style-type: none; 
+  }
+  .list li::before {
+    content: "•"; 
+    color: rgb(53, 147, 255); 
+    padding-right: 8px; 
+  }
+
+  .blockquote-6 {
+    border-left: 6px solid #BFE2FF;
+    font-size: 16px;
+    font-style: italic;
+    margin: 16px;
+    padding: 16px 24px;
+    position: relative;
+}
+.blockquote-6:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    height: 40px;
+    background-color: #fff;
+    width: 6px;
+    margin-top: -1em;
+}
+.blockquote-6:after {
+    content: "”";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    color: #337AB7;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.blockquote-6 cite {
+    color: #337AB7;
+    font-size: 15px;
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+}
+</style>
+<body>
+     <div class="container">
+            <div class="routine">
+                <h1>Распорядок</h1>
+                <h2>Для чего нужны правила внутреннего трудового распорядка</h2>
+                <p>Роль правил внутреннего распорядка, относящихся к локальным нормативным актам, многогранна:</p>
+                <ul class="list">
+                    <li>они определяют порядок назначения на должность и увольнения сотрудников,</li>
+                    <li>режим труда и отдыха,</li>
+                    <li>права и полномочия,</li>
+                    <li>ответственность за различного рода нарушения,</li>
+                    <li>способы поощрения и меры наказаний за те или иные проступки,</li>
+                    <li>дресс-код,</li>
+                    <li>иные условия.</li>
+                </ul>
+                <p>В глобальном смысле данный документ способствует повышению производительности труда, расширению перспектив организации. В зависимости от предприятия, правила могут редактироваться и содержать какие-то дополнительные пункты.</p>
+                <blockquote class="blockquote-6">
+                    <p>Единственное, чего не касаются правила трудового распорядка - конкретных трудовых функций сотрудников - их регулируют положения трудового договора или должностная инструкция</p>
+                </blockquote>
+                <p>Некоторые компании довольно пренебрежительно относятся к наличию и/или составлению данного документа. Это неправильно, поскольку в случае жалобы кого-либо из сотрудников в трудовую инспекцию, ее представители при выездой проверке, первым делом интересуются именно правилами внутреннего трудового распорядка. Еще и поэтому к составлению документа стоит относиться в высшей степени внимательно и серьезно - это позволит избежать в будущем разногласий с контролирующими структурами и возможных административных наказаний.</p>
+</body>
+</html>
+{% endblock content %}

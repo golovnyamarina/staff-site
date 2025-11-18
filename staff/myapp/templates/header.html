@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #ffea74;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; 
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .add-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span class="title">Staff</span>
+        </div>
+        <div class="menu">
+            <span class="menu-item"><a href="/">Главная</a></span>
+            <span class="menu-item"><a href="/routine">Распорядок</a></span>
+            <button class="add-button"><a href="/add">Добавить</a></button>
+        </div>
+    </div>
+</body>
+</html>
